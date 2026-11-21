@@ -3,7 +3,7 @@ LIBFT_DIR = libft
 LIBFT     = $(LIBFT_DIR)/libft.a
 
 CC        = cc
-CFLAGS    = -Wall -Wextra -Werror -g -I. -I$(LIBFT_DIR)
+CFLAGS    = -Wall -Wextra -Werror -I. -I$(LIBFT_DIR)
 
 SRCS      = ft_printf.c \
 			parse.c \
