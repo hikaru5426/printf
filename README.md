@@ -131,5 +131,54 @@ stream, so there is nothing to store between conversions.
 - [cppreference – Variadic functions](https://en.cppreference.com/w/c/variadic)
 - [GNU C Library – Variadic Functions](https://www.gnu.org/software/libc/manual/html_node/Variadic-Functions.html)
 - [Two's complement (Wikipedia)](https://en.wikipedia.org/wiki/Two%27s_complement)
+#include "ft_printf.h"
+# include "stdio.h"
+
+int	main()
+{
+	ft_printf("abcd%");
+
+	char	c = 'b';
+	ft_printf("size : %d\n\n", ft_printf("\nMy char : %c\n", c));
+	printf("Original size : %d\n\n", printf("Original char : %c\n", c));
+
+	char	*str = "cheval";
+	ft_printf("size : %d\n\n", ft_printf("My str : %s\n", str));
+	printf("Original size : %d\n\n", printf("Original str : %s\n", str));
+
+	void	*void_pnt = &c;
+	ft_printf("size : %d\n\n", ft_printf("My void pnt : %p\n", void_pnt));
+	printf("Original size : %d\n\n", printf("Original void pnt : %p\n", void_pnt));
+
+	int	integer = -120;
+	ft_printf("size : %d\n\n", ft_printf("My dec : %d\n", integer));
+	printf("Original size : %d\n\n", printf("Original dec : %d\n", integer));
+	ft_printf("size : %d\n\n", ft_printf("My int : %i\n", integer));
+	printf("Original size : %d\n\n", printf("Original int : %i\n", integer));
+
+	unsigned int	uInt = 150;
+	ft_printf("size : %d\n\n", ft_printf("My uInt : %u\n", uInt));
+	printf("Original size : %d\n\n", printf("Original uInt : %u\n", uInt));
+
+	int int_to_hexa = -165;
+	ft_printf("size : %d\n\n", ft_printf("My int_to_hexa lower : %x\n", int_to_hexa));
+	printf("Original size : %d\n\n", printf("Original int_to_hexa lower : %x\n", int_to_hexa));
+
+	ft_printf("size : %d\n\n", ft_printf("My int_to_hexa upper : %X\n", int_to_hexa));
+	printf("Original size : %d\n\n", printf("Original int_to_hexa upper : %X\n", int_to_hexa));
+
+	ft_printf("size : %d\n\n", ft_printf("My %% : %%\n"));
+	printf("Original size : %d\n\n", printf("Original %% : %%\n"));
+
+	// printf("Char : %c\n"
+	// 		"Str : %s\n"
+	// 		"Void pnt : %p\n"
+	// 		"Dec : %d\n"
+	// 		"Int : %i\n"
+	// 		"Unsigned Dec : %u\n"
+	// 		"Hexa nb lower : %x\n"
+	// 		"Hexa nb upper : %X\n"
+	// 		"Percent : %%\n", c, str, void_pnt, integer, uInt, int_to_hexa, int_to_hexa);
+}
 
 ### Use of AI
