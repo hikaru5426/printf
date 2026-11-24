@@ -6,7 +6,7 @@
 /*   By: hikaru <hikaru@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 13:16:55 by hikaru            #+#    #+#             */
-/*   Updated: 2026/11/21 20:26:42 by hikaru           ###   ########.fr       */
+/*   Updated: 2026/11/24 12:03:16 by hikaru           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,13 +45,13 @@ void	parse(const char *str, va_list *args, int *count)
 		if (str[i] == '%' && str[i + 1])
 		{
 			arg_detected(str[i + 1], args, count);
-			i += 2;
+			i++;
 		}
 		else if (str[i] != '%')
 		{
 			write(1, &str[i], 1);
 			(*count)++;
-			i++;
 		}
+		i++;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: hikaru <hikaru@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 16:55:48 by hikaru            #+#    #+#             */
-/*   Updated: 2026/11/21 20:02:37 by hikaru           ###   ########.fr       */
+/*   Updated: 2026/11/24 12:05:38 by hikaru           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include "libft/libft.h"
-# include "stdio.h"
+
 
 int		ft_printf(const char *str, ...);
 void	parse(const char *str, va_list *args, int *count);
